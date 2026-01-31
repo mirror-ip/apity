@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: rgb(236, 152, 42);
+        }
+
+        .center {
+            width: 100%;
+            height: 50%;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 144px;
+        }
+
+        p {
+            font-size: 64px;
+        }
+    </style>
+    <% if (profile) { %>
+        <title>
+            <%= profile.tieu_de %>
+        </title>
+        <meta property="og:title" content="<%= profile.tieu_de %>" />
+        <meta property="og:description" content="<%= profile.mo_ta %>" />
+        <meta property="og:image" content="<%= profile.link_hinh %>" />
+        <meta property="og:type" content="<%= profile.type_display %>" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="627" />
+
+</head>
+
+
+<h2>
+    <%= title %>
+</h2>
+
+<div id="main">
+
+
+    <h3>This is the profile page for <%= profile.fullname %>.</h3>
+    <p>Email: <%= profile.email %>
+    </p>
+    <p>Username: <%= profile.username %>
+    </p>
+    <p>Subdomain: <a href="<%= profile.link %>">
+            <%= profile.link %>
+        </a></p>
+    <p>Your Add: <%= profile.ext_path %>
+    </p>
+    <p>Your Link: <%= profile.ext_log %>
+    </p>
+    <p>Title: <%= profile.tieu_de %>
+    </p>
+    <p>Description: <%= profile.mo_ta %>
+    </p>
+    <p>Image Link: <%= profile.link_hinh %>
+    </p>
+    <p>Type Display: <%= profile.type_display %>
+    </p>
+
+    <% }else{ %>
+        <p>
+            This is not a valid subdomain.
+        </p>
+        <p>
+            <a href="<%= create_subdomain_link %>">Want this subdomain? Click to claim it now.</a>
+        </p>
+        <% } %>
+
+</div>
+<%- include('./partials/footer.ejs') %>

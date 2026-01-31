@@ -1,0 +1,104 @@
+<%- include('./partials/header.ejs') %>
+  <h2>
+    <%= //title %>
+  </h2>
+
+  <div class="center">
+    <div>
+      <form method="POST" action="/">
+        <h3>Create a new link</h3>
+        <!--	<input type="text" name="firstname" placeholder="First Name"> 
+	<input type="text" name="lastname" placeholder="Last Name">
+	<input type="email" name="email" placeholder="Email">
+	<input type="text" name="username" placeholder="Username"> -->
+        <input type="text" name="yourlink" placeholder="Link">
+        <input type="text" name="yourtitle" placeholder="Title">
+        <input type="text" name="yourmota" placeholder="Description">
+        <input type="text" name="imglink" placeholder="Image Link">
+        <br> <label for="typedisplay">Type Display:</label>
+        <select name="typeshow" id="typedisplayid">
+          <option value="Video">Video</option>
+          <option value="Website">Website</option>
+          <option value="Article">Article</option>
+        </select>
+        <button type="submit" name="submit">
+          PopUp
+        </button>
+      </form>
+    </div>
+
+    <h3>Admin manager database</h3>
+    <h2>
+      <%= users.length %>
+    </h2>
+    <div id="list">
+      <% if(users){ %>
+        <p>List of registered users and their Subdomains</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Username</th>
+              <th>Subdomain</th>
+              <th>YourAdd</th>
+              <th>YourLink</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>ImageLink</th>
+              <th>Type Display</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.map((user)=>{
+              %>
+              <tr>
+                <td>
+                  <%= user._id %>
+                </td>
+                <td>
+                  <%= user.fullname %>
+                </td>
+                <td>
+                  <%= user.email %>
+                </td>
+                <td>
+                  <%= user.username %>
+                </td>
+                <td>
+                  <a href="<%= user.link %>">
+                    <%= user.link %>
+                  </a>
+                </td>
+                <td>
+                  <%= user.ext_path %>
+                </td>
+                <td>
+                  <%= user.ext_log %>
+                </td>
+                <td>
+                  <%= user.tieu_de %>
+                </td>
+                <td>
+                  <%= user.mo_ta %>
+                </td>
+                <td>
+                  <%= user.link_hinh %>
+                </td>
+                <td>
+                  <%= user.type_display %>
+                </td>
+
+              </tr>
+              <% }) %>
+          </tbody>
+        </table>
+
+        <% }else{ %>
+          <p>No users have been registered</p>
+          <% } %>
+    </div>
+  </div>
+  <%- include('./partials/footer.ejs') %>
