@@ -1,0 +1,124 @@
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (apity) apity-web
+version: (1.0.0)
+description: A Web Service
+entry point: (index.js) app.js
+test command:
+git repository: https://github.com/mountto/apity.git
+keywords: web service,web server,apity web,web,server,apity,apity web server
+author: Hải
+license: (ISC) MIT
+About to write to C:\Users\teo20\OneDrive\Documents\GitHub\apity\package.json:
+
+{
+  "name": "apity-web",
+  "version": "1.0.0",
+  "description": "A Web Service ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mountto/apity.git"
+  },
+  "keywords": [
+    "web",
+    "service",
+    "web",
+    "server",
+    "apity",
+    "web",
+    "web",
+    "server",
+    "apity",
+    "apity",
+    "web",
+    "server"
+  ],
+  "author": "Hải",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mountto/apity/issues"
+  },
+  "homepage": "https://github.com/mountto/apity#readme"
+}
+
+
+Is this OK? (yes) yes
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install express
+
+added 58 packages, and audited 59 packages in 7s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install express-basic-auth
+
+added 3 packages, and audited 62 packages in 2s
+
+8 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install ejs
+
+added 16 packages, and audited 78 packages in 5s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install vhost
+
+added 1 package, and audited 79 packages in 2s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install sqlite3
+npm WARN deprecated @npmcli/move-file@1.1.2: This functionality has been moved to @npmcli/fs
+
+added 104 packages, and audited 183 packages in 13s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install csv
+
+added 5 packages, and audited 188 packages in 4s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>npm install body-parser
+
+added 2 packages, changed 2 packages, and audited 190 packages in 2s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\teo20\OneDrive\Documents\GitHub\apity>
