@@ -1,3 +1,11 @@
+/**
+ * APITY: APITY Web Sevices.
+ *
+ * @copyright Copyright (c) 2026, Hoàng Hải <leduchoanghai@yahoo.com>
+ * @license   MIT, http://www.opensource.org/licenses/mit-license.php
+ */
+
+
 const fs = require("fs");
 const { parse } = require("csv-parse");
 const db = require("./load_db");
