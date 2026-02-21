@@ -1,3 +1,10 @@
+/**
+ * APITY: APITY Web Sevices.
+ *
+ * @copyright Copyright (c) 2026, Hoàng Hải <leduchoanghai@yahoo.com>
+ * @license   MIT, http://www.opensource.org/licenses/mit-license.php
+ */
+
 // export const DOMAIN = 'yourdomain.local';
 // export const PORT = 8080;
 module.exports = {
