@@ -1,3 +1,11 @@
+/**
+ * APITY: APITY Web Sevices.
+ *
+ * @copyright Copyright (c) 2026, Hoàng Hải <leduchoanghai@yahoo.com>
+ * @license   MIT, http://www.opensource.org/licenses/mit-license.php
+ */
+
+
 const express = require('express');
 const router = express.Router();
 const User = require('../models/user.js');
