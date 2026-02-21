@@ -1,3 +1,11 @@
+/**
+ * APITY: APITY Web Sevices.
+ *
+ * @copyright Copyright (c) 2026, Hoàng Hải <leduchoanghai@yahoo.com>
+ * @license   MIT, http://www.opensource.org/licenses/mit-license.php
+ */
+
+
 const fs = require("fs");
 const sqlite3 = require("sqlite3").verbose();
 const filepath = "./sqlite3_load/init_app.db";
